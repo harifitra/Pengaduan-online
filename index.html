@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pengaduan Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container mt-5">
+  <h2>Form Pengaduan</h2>
+
+  <form id="formPengaduan">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nama</label>
+      <input type="text" id="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Isi Pengaduan</label>
+      <textarea id="message" class="form-control" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim Pengaduan</button>
+  </form>
+
+  <hr class="my-5">
+
+  <h3>Daftar Pengaduan</h3>
+  <div id="listPengaduan"></div>
+<footer class="text-center mt-5 mb-3 text-muted">
+  &copy; 2025 Zamir Harifitra. All rights reserved.
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
